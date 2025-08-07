@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", "sans-serif";
+  --breakpoint-3xl: 1920px;
+  --color-primary: #875cf5;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+    font-weight: 450;
+  }
+
+  body {
+    background-color: #fcfbfc;
+    overflow-x: hidden;
+  }
+}
+
+.btn-primary {
+  @apply w-full text-sm font-medium text-white bg-violet-500 shadow-lg shadow-purple-600/5 p-[10px] rounded-md my-1 hover:bg-purple-600/15 hover:text-purple-600;
+}
+
+.card {
+  @apply bg-white p-6 rounded-2xl shadow-md shadow-gray-100 border border-gray-200/50;
+}
+
+.card-btn {
+  @apply flex items-center gap-3 text-[12px] font-semibold text-gray-700 hover:text-purple-500 bg-gray-50 hover:bg-purple-50 px-4 py-1.5 rounded-lg border border-gray-200/50 cursor-pointer;
+}
+
+.add-btn{
+  @apply flex items-center gap-1.5 text-xs md:text-sm font-semibold text-purple-700 whitespace-nowrap bg-purple-50 border border-purple-100 rounded-lg px-4 py-2 cursor-pointer;
+}
+
+
+.add-btn-fill{
+  @apply text-white bg-primary;
+}
+
+.delete-btn {
+  @apply flex items-center gap-1.5 text-xs md:text-sm font-semibold text-red-700 whitespace-nowrap bg-red-50 border border-red-100 rounded-lg px-4 py-2 cursor-pointer hover:bg-red-100 hover:border-red-200;
+}
+
+.delete-btn-fill {
+  @apply text-white bg-red-500 hover:bg-red-600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideFadeIn {
+  animation: slideFadeIn 0.4s ease-out both;
+}
+
+
+
+
+@theme {
+  --color-berry-50: #f6f0ff;
+  --color-berry-100: #efe4ff;
+  --color-berry-200: #e1ccff;
+  --color-berry-300: #cba4ff;
+  --color-berry-400: #b570ff;
+  --color-berry-500: #a237ff;
+  --color-berry-600: #9e0fff;
+  --color-berry-700: #9400ff;
+  --color-berry-800: #7c00da;
+  --color-berry-900: #6e00be;
+  --color-berry-950: #3f007a;
+
+  --color-chess-50: #ffffff;
+  --color-chess-100: #E6E6E6;
+  --color-chess-200: #CCCCCC;
+  --color-chess-300: #B3B3B3;
+  --color-chess-400: #999999;
+  --color-chess-500: #808080;
+  --color-chess-600: #666666;
+  --color-chess-700: #4C4C4C;
+  --color-chess-800: #333333;
+  --color-chess-900: #1A1A1A;
+  --color-chess-950: #000000;
+
+  --color-pumpkin-50: #fff9ec;
+  --color-pumpkin-100: #fff1d3;
+  --color-pumpkin-200: #ffdfa5;
+  --color-pumpkin-300: #ffc86d;
+  --color-pumpkin-400: #ffa432;
+  --color-pumpkin-500: #ff880a;
+  --color-pumpkin-600: #ff6f00;
+  --color-pumpkin-700: #cc5002;
+  --color-pumpkin-800: #a13e0b;
+  --color-pumpkin-900: #82350c;
+  --color-pumpkin-950: #461804;
+  
+}
